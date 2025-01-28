@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Catalogue</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <h1 class="header__title">Store Catalogue</h1>
+        <input type="text" id="search" class="header__search" placeholder="Search products...">
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+        <aside class="filters">
+            <h2 class="filters__title">Filters</h2>
+            <form id="filter-form">
+                <div class="filters__group">
+                    <label for="category">Category:</label>
+                    <select id="category" class="filters__select">
+                        <option value="all">All</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="home">Home</option>
+                    </select>
+                </div>
+                <div class="filters__group">
+                    <label for="price-range">Price Range:</label>
+                    <input type="range" id="price-range" class="filters__range" min="0" max="1000" step="50">
+                    <span id="price-value" class="filters__value">$0 - $1000</span>
+                </div>
+                <button type="button" id="apply-filters" class="filters__button">Apply Filters</button>
+            </form>
+        </aside>
+        <section id="products" class="products">
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <p class="footer__text">&copy; 2025 Store Catalogue. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
