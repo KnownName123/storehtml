@@ -1,3 +1,4 @@
+
 const searchInput = document.getElementById('search');
 const priceRange = document.getElementById('price-range');
 const priceValue = document.getElementById('price-value');
